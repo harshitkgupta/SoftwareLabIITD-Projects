@@ -1,0 +1,13 @@
+WIND       		 Chill 	:	 36
+Parameters 		Direction 	:	 290
+		 Speed 	:	 19.31 mb
+ Atmosphere 	 	Humidity 	:	 18
+Parametres 		Visibility 	:	 5
+			 Pressure 	:	 982.05 mb
+			Rising   	:	 0
+Astronomy 		Sunrise 	:	 5:55 am
+Parameters 		Sunset  	:	 6:24 pm
+		Weather Conditions	
+Date       	:	 Thu, 03 Apr 2014 2:31 pm IST
+Temperature 	:	 36 C
+Conditions 	:	 Haze

@@ -1,0 +1,50 @@
+#!/bin/bash
+if [ -n "$1" -a "$1" = "-h" ]
+then
+	echo "usage: "`basename $0`" <folder-name> <extension-type> "
+	exit
+fi
+
+
+
+directory=$1
+suffix=$2
+echo $1 $2 $#
+browsefolders ()
+{
+ 
+echo $directory
+ if  [[ $directory =~ [[:lower:]/]+ ]] 
+then
+  cd $directory 
+  		
+  for i in *; 
+  do    	
+  	echo $i;
+    if     [ -f "$i" ]; then        
+	extension=`echo "$i" | cut -d'.' -f2`
+        if [ $extension == $suffix ]; then
+		pwd=`env|grep PWD|cut -d'=' -f2 `
+            echo "$pwd   " `basename $i `>> match.txt
+		if [ $extension = "c" ]
+		then
+			gcc   $i
+			echo "executing program"
+			#./a.out 
+		fi	
+		if [ $extension = "sh" ]
+		then
+			#./$i 
+			echo "executing shell script"
+		fi
+	fi
+    elif [ -d "$i" ]; then  
+     browsefolders "$i" &
+    fi
+  done
+fi
+}
+if [ $# == 2 ]
+then 
+browsefolders  "$directory"
+fi

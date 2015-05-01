@@ -1,0 +1,125 @@
+GAS LISTING /tmp/ccVtABBh.s 			page 1
+
+
+   1              		.file	"cosine.c"
+   9              	.Ltext0:
+  10              		.cfi_sections	.debug_frame
+  11              		.section	.rodata
+  12              	.LC0:
+  13 0000 256C6620 		.string	"%lf %lf"
+  13      256C6600 
+  14              		.align 4
+  15              	.LC3:
+  16 0008 436F7369 		.string	"Cosine of a= %lf \nCosine of b= %lf \n"
+  16      6E65206F 
+  16      6620613D 
+  16      20256C66 
+  16      200A436F 
+  17              		.text
+  18              	.globl main
+  20              	main:
+  21              	.LFB0:
+  22              		.file 1 "cosine.c"
+   1:cosine.c      **** #include<stdio.h>
+   2:cosine.c      **** #include<math.h>
+   3:cosine.c      **** #define PI 3.14159265358979323846
+   4:cosine.c      **** int main()
+   5:cosine.c      **** {
+  23              		.loc 1 5 0
+  24              		.cfi_startproc
+  25 0000 55       		pushl	%ebp
+  26              	.LCFI0:
+  27              		.cfi_def_cfa_offset 8
+  28 0001 89E5     		movl	%esp, %ebp
+  29              		.cfi_offset 5, -8
+  30              	.LCFI1:
+  31              		.cfi_def_cfa_register 5
+  32 0003 83E4F0   		andl	$-16, %esp
+  33 0006 83EC50   		subl	$80, %esp
+   6:cosine.c      **** 	double a,b;
+   7:cosine.c      **** 	scanf("%lf %lf",&a,&b);
+  34              		.loc 1 7 0
+  35 0009 B8000000 		movl	$.LC0, %eax
+  35      00
+  36 000e 8D542440 		leal	64(%esp), %edx
+  37 0012 89542408 		movl	%edx, 8(%esp)
+  38 0016 8D542448 		leal	72(%esp), %edx
+  39 001a 89542404 		movl	%edx, 4(%esp)
+  40 001e 890424   		movl	%eax, (%esp)
+  41 0021 E8FCFFFF 		call	__isoc99_scanf
+  41      FF
+   8:cosine.c      **** 	double rada,radb;
+   9:cosine.c      **** 	rada=PI*(a)/180;
+  42              		.loc 1 9 0
+  43 0026 DD442448 		fldl	72(%esp)
+  44 002a DD053000 		fldl	.LC1
+  44      0000
+  45 0030 DEC9     		fmulp	%st, %st(1)
+  46 0032 DD053800 		fldl	.LC2
+  46      0000
+  47 0038 DEF9     		fdivrp	%st, %st(1)
+GAS LISTING /tmp/ccVtABBh.s 			page 2
+
+
+  48 003a DD5C2438 		fstpl	56(%esp)
+  10:cosine.c      **** 	radb=PI*(b)/180;
+  49              		.loc 1 10 0
+  50 003e DD442440 		fldl	64(%esp)
+  51 0042 DD053000 		fldl	.LC1
+  51      0000
+  52 0048 DEC9     		fmulp	%st, %st(1)
+  53 004a DD053800 		fldl	.LC2
+  53      0000
+  54 0050 DEF9     		fdivrp	%st, %st(1)
+  55 0052 DD5C2430 		fstpl	48(%esp)
+  11:cosine.c      **** 	printf("Cosine of a= %lf \nCosine of b= %lf \n",cos(rada),cos(radb));
+  56              		.loc 1 11 0
+  57 0056 DD442430 		fldl	48(%esp)
+  58 005a DD1C24   		fstpl	(%esp)
+  59 005d E8FCFFFF 		call	cos
+  59      FF
+  60 0062 DD5C2428 		fstpl	40(%esp)
+  61 0066 DD442438 		fldl	56(%esp)
+  62 006a DD1C24   		fstpl	(%esp)
+  63 006d E8FCFFFF 		call	cos
+  63      FF
+  64 0072 B8080000 		movl	$.LC3, %eax
+  64      00
+  65 0077 DD442428 		fldl	40(%esp)
+  66 007b DD5C240C 		fstpl	12(%esp)
+  67 007f DD5C2404 		fstpl	4(%esp)
+  68 0083 890424   		movl	%eax, (%esp)
+  69 0086 E8FCFFFF 		call	printf
+  69      FF
+  12:cosine.c      **** 	return 0;		
+  70              		.loc 1 12 0
+  71 008b B8000000 		movl	$0, %eax
+  71      00
+  13:cosine.c      **** }...
+  72              		.loc 1 13 0
+  73 0090 C9       		leave
+  74 0091 C3       		ret
+  75              		.cfi_endproc
+  76              	.LFE0:
+  78              		.section	.rodata
+  79 002d 000000   		.align 8
+  80              	.LC1:
+  81 0030 182D4454 		.long	1413754136
+  82 0034 FB210940 		.long	1074340347
+  83              		.align 8
+  84              	.LC2:
+  85 0038 00000000 		.long	0
+  86 003c 00806640 		.long	1080459264
+  87              		.text
+  88              	.Letext0:
+GAS LISTING /tmp/ccVtABBh.s 			page 3
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 cosine.c
+     /tmp/ccVtABBh.s:20     .text:0000000000000000 main
+
+UNDEFINED SYMBOLS
+__isoc99_scanf
+cos
+printf

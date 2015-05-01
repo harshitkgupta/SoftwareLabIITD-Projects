@@ -1,0 +1,3 @@
+gcc  -pg -DVALUE0 efficient1.c -o test_gprof
+./test_gprof < in	> out  
+gprof test_gprof1 gmon.out > analysis.txt1

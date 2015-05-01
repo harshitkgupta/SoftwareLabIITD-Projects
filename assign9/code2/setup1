@@ -1,0 +1,3 @@
+gcc  -pg cosine1.c -o test_gprof 
+./test_gprof <in >out	  
+gprof test_gprof gmon.out> analysis.txt1

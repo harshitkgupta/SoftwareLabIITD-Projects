@@ -1,0 +1,10 @@
+3 Feb 2014 	   Mon 		-8 		-1 	Cloudy
+4 Feb 2014 	   Tue 		-3 		1 	PM Wintry Mix
+5 Feb 2014 	   Wed 		-13 		-2 	AM Snow Showers
+6 Feb 2014 	   Thu 		-14 		-4 	Cloudy
+7 Feb 2014 	   Fri 		-9 		-4 	Mostly Cloudy
+9 Feb 2014 	   Sun 		-14 		-1 	Snow Showers
+10 Feb 2014 	   Mon 		-18 		-6 	Partly Cloudy
+11 Feb 2014 	   Tue 		-15 		-7 	AM Clouds/PM Su
+12 Feb 2014 	   Wed 		-7 		1 	Mostly Cloudy
+13 Feb 2014 	   Thu 		-3 		-1 	Cloudy

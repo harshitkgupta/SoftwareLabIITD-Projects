@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+		<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+			<channel>
+		
+<title>Yahoo! Weather - Kanpur, IN</title>
+<link>http://us.rd.yahoo.com/dailynews/rss/weather/Kanpur__IN/*http://weather.yahoo.com/forecast/INXX0067_c.html</link>
+<description>Yahoo! Weather for Kanpur, IN</description>
+<language>en-us</language>
+<lastBuildDate>Thu, 03 Apr 2014 2:31 pm IST</lastBuildDate>
+<ttl>60</ttl>
+<yweather:location city="Kanpur" region="UP"   country="India"/>
+<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>
+<yweather:wind chill="36"   direction="290"   speed="19.31" />
+<yweather:atmosphere humidity="18"  visibility="5"  pressure="982.05"  rising="0" />
+<yweather:astronomy sunrise="5:55 am"   sunset="6:24 pm"/>
+<image>
+<title>Yahoo! Weather</title>
+<width>142</width>
+<height>18</height>
+<link>http://weather.yahoo.com</link>
+<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>
+</image>
+<item>
+<title>Conditions for Kanpur, IN at 2:31 pm IST</title>
+<geo:lat>26.45</geo:lat>
+<geo:long>80.32</geo:long>
+<link>http://us.rd.yahoo.com/dailynews/rss/weather/Kanpur__IN/*http://weather.yahoo.com/forecast/INXX0067_c.html</link>
+<pubDate>Thu, 03 Apr 2014 2:31 pm IST</pubDate>
+<yweather:condition  text="Haze"  code="21"  temp="36"  date="Thu, 03 Apr 2014 2:31 pm IST" />
+<description><![CDATA[
+<img src="http://l.yimg.com/a/i/us/we/52/21.gif"/><br />
+<b>Current Conditions:</b><br />
+Haze, 36 C<BR />
+<BR /><b>Forecast:</b><BR />
+Thu - Clear. High: 36 Low: 19<br />
+Fri - Sunny. High: 36 Low: 22<br />
+Sat - Sunny. High: 37 Low: 21<br />
+Sun - Sunny. High: 39 Low: 23<br />
+Mon - Sunny. High: 41 Low: 23<br />
+<br />
+<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Kanpur__IN/*http://weather.yahoo.com/forecast/INXX0067_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>
+(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>
+]]></description>
+<yweather:forecast day="Thu" date="3 Apr 2014" low="19" high="36" text="Clear" code="31" />
+<yweather:forecast day="Fri" date="4 Apr 2014" low="22" high="36" text="Sunny" code="32" />
+<yweather:forecast day="Sat" date="5 Apr 2014" low="21" high="37" text="Sunny" code="32" />
+<yweather:forecast day="Sun" date="6 Apr 2014" low="23" high="39" text="Sunny" code="32" />
+<yweather:forecast day="Mon" date="7 Apr 2014" low="23" high="41" text="Sunny" code="32" />
+<guid isPermaLink="false">INXX0067_2014_04_07_7_00_IST</guid>
+</item>
+</channel>
+</rss>
+
+<!-- fan1648.sports.bf1.yahoo.com Thu Apr  3 10:19:33 PST 2014 -->

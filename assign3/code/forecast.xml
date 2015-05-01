@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+		<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+			<channel>
+		
+<title>Yahoo! Weather - Landon, OH</title>
+<link>http://us.rd.yahoo.com/dailynews/rss/weather/Landon__OH/*http://weather.yahoo.com/forecast/USOH0543_c.html</link>
+<description>Yahoo! Weather for Landon, OH</description>
+<language>en-us</language>
+<lastBuildDate>Sun, 09 Feb 2014 10:38 am EST</lastBuildDate>
+<ttl>60</ttl>
+<yweather:location city="Landon" region="OH"   country="United States"/>
+<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>
+<yweather:wind chill="-7"   direction="290"   speed="12.87" />
+<yweather:atmosphere humidity="82"  visibility="1.61"  pressure="1015.92"  rising="1" />
+<yweather:astronomy sunrise="7:35 am"   sunset="6:06 pm"/>
+<image>
+<title>Yahoo! Weather</title>
+<width>142</width>
+<height>18</height>
+<link>http://weather.yahoo.com</link>
+<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>
+</image>
+<item>
+<title>Conditions for Landon, OH at 10:38 am EST</title>
+<geo:lat>39.32</geo:lat>
+<geo:long>-84.25</geo:long>
+<link>http://us.rd.yahoo.com/dailynews/rss/weather/Landon__OH/*http://weather.yahoo.com/forecast/USOH0543_c.html</link>
+<pubDate>Sun, 09 Feb 2014 10:38 am EST</pubDate>
+<yweather:condition  text="Light Snow"  code="14"  temp="-2"  date="Sun, 09 Feb 2014 10:38 am EST" />
+<description><![CDATA[
+<img src="http://l.yimg.com/a/i/us/we/52/14.gif"/><br />
+<b>Current Conditions:</b><br />
+Light Snow, -2 C<BR />
+<BR /><b>Forecast:</b><BR />
+Sun - Snow Showers. High: -1 Low: -14<br />
+Mon - Partly Cloudy. High: -6 Low: -18<br />
+Tue - AM Clouds/PM Sun. High: -7 Low: -15<br />
+Wed - Mostly Cloudy. High: 1 Low: -7<br />
+Thu - Cloudy. High: -1 Low: -3<br />
+<br />
+<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Landon__OH/*http://weather.yahoo.com/forecast/USOH0543_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>
+(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>
+]]></description>
+<yweather:forecast day="Sun" date="9 Feb 2014" low="-14" high="-1" text="Snow Showers" code="14" />
+<yweather:forecast day="Mon" date="10 Feb 2014" low="-18" high="-6" text="Partly Cloudy" code="30" />
+<yweather:forecast day="Tue" date="11 Feb 2014" low="-15" high="-7" text="AM Clouds/PM Sun" code="30" />
+<yweather:forecast day="Wed" date="12 Feb 2014" low="-7" high="1" text="Mostly Cloudy" code="28" />
+<yweather:forecast day="Thu" date="13 Feb 2014" low="-3" high="-1" text="Cloudy" code="26" />
+<guid isPermaLink="false">USOH0543_2014_02_13_7_00_EST</guid>
+</item>
+</channel>
+</rss>
+
+<!-- api150.weather.sg3.yahoo.com Sun Feb  9 16:06:51 PST 2014 -->

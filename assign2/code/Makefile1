@@ -1,0 +1,3 @@
+NoOfOccurrences:NoOfOccurrences.cpp
+	g++ -Wall -o NoOfOccurrences NoOfOccurrences.cpp -lpthread
+

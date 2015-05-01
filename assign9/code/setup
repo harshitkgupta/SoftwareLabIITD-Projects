@@ -1,0 +1,9 @@
+gcc  -pg -DVALUE0 efficient.c -o test_gprof
+./test_gprof <in
+mv gmon.out gmon.sum
+for i in `seq 1 100`
+do
+	./test_gprof <in
+	 gprof -s test_gprof gmon.out gmon.sum
+done	  
+gprof test_gprof gmon.sum> analysis.txt

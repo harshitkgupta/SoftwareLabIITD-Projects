@@ -1,0 +1,10 @@
+--2014-04-03 15:49:33--  http://weather.yahooapis.com/forecastrss?w=2295378&u=c
+Connecting to 10.10.78.61:3128... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/xml]
+Saving to: `forecast.xml'
+
+     0K ..                                                      832K=0.003s
+
+2014-04-03 15:49:33 (832 KB/s) - `forecast.xml' saved [2665]
+

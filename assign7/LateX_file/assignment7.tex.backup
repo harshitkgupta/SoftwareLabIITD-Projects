@@ -1,0 +1,170 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usetikzlibrary{arrows,automata}
+\definecolor{pythonred}{rgb}{0.6,0,0} % for strings
+\definecolor{pythongreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{pythonpurple}{rgb}{0.5,0,0.35} % keywords
+	\definecolor{pythondocblue}{rgb}{0.25,0.35,0.75} % javadoc
+	 
+	\lstset{language=python,
+	basicstyle=\ttfamily,
+	keywordstyle=\color{pythonpurple}\bfseries,
+	stringstyle=\color{pythonred},
+	commentstyle=\color{pythongreen},
+	morecomment=[s][\color{pythondocblue}]{/**}{*/},
+	numbers=left,
+	numberstyle=\tiny\color{black},
+        stepnumber=2,
+	numbersep=10pt,
+	tabsize=4,
+	showspaces=false,
+	showstringspaces=false}
+
+% Title Page
+
+ \title{\bfseries\huge \textcolor{purple}{\underline {EEP702-Software Lab}} \\{\textcolor{blue}{Assignment7 : Sentiment Analysis in Python}}}
+\author{\bfseries\large\textcolor{black}  {Prashant Kumar}\\ {\textcolor{black} {2013EET2374 }}\\
+\includegraphics[width=3cm,height=3.4cm]{./iit.png}\\\noindent Computer Technology\\
+\noindent Department Of Electrical Engineering\\IIT DELHI}
+% iit.png: 282x282 pixel, 72dpi, 9.95x9.95 cm, bb=0 0 282 282
+\begin{document}
+\maketitle
+\tableofcontents
+
+\begin{center}
+ \chapter{\textcolor{blue}{\underline {PROBLEM STATEMENT}}}
+\noindent Write a program in Python as per the given statement.
+
+\begin{enumerate}
+ \item You are given a text file which contains random facebook status.
+ \item You have to do sentiment analysis of those posts on the basis of
+       positive,negative and neutral feelings.
+ \item To differentiate between feelings, create a dictionary having various positive and
+negative words.
+\item Match whether a post has any of those words and if it has, it gets counted into the
+respective category.Also Include emoticons (for ex. :) for positive and :( for sad).
+\item Consider a post having neither positive nor negative feelings as neutral.
+\item TASKS
+\begin{enumerate}
+ \item Count the number of posts with each kind of ‘feeling’ for a given hour (use
+a command line tool).
+\item Make a table with entries “feeling” and “its count in terms of posts in a
+given hour”
+\item For each hour,normalize this counted data on the scale of [-1,0,1] i.e.
+assign weight of -1 to negative feeling, +1 to positive feeling , 0 to neutral
+feeling and adding all, divide result by total number of posts in that
+hour.From this calculated data, plot a graph with hour as X-axis and
+normalized feeling value as Y-axis.
+\end{enumerate}
+
+\end{enumerate}
+
+\end{center}
+
+\begin{center}
+\chapter{\textcolor{blue}{\underline {ABSTRACT}}}
+\end{center}
+\noindent The Intention of the Python Code is to practice and get familiar with the python programming. Sentiment analysis or opinion mining is the computational study of people’s opinions,
+sentiments, attitudes, and emotions expressed in written language. It is one of the most active research
+areas in natural language processing and text mining in recent years. Its popularity is mainly due to two
+reasons. First, it has a wide range of applications because opinions are central to almost all human
+activities and are key influencers of our behaviors. Whenever we need to make a decision, we want to
+hear others’ opinions. Second, it presents many challenging research problems, which had never been
+attempted before the year 2000.
+\begin{center}
+\chapter{\textcolor{blue}{\underline {INTRODUCTION}}}
+\end{center}
+\noindent Python is a widely used general-purpose, high-level programming language. Its design philosophy 
+emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would 
+be possible in languages such as C. The language provides constructs intended to enable clear programs on both
+a small and large scale
+
+Python supports multiple programming paradigms, including object-oriented, imperative and functional programming or 
+procedural styles. It features a dynamic type system and automatic memory management and has a large and comprehensive
+standard library.
+
+Sentiment analysis (also known as opinion mining) refers to the use of natural language processing, text analysis and
+computational linguistics to identify and extract subjective information in source materials.
+
+Generally speaking, sentiment analysis aims to determine the attitude of a speaker or a writer with respect to some 
+topic or the overall contextual polarity of a document. The attitude may be his or her judgment or evaluation 
+(see appraisal theory), affective state (that is to say, the emotional state of the author when writing), or the 
+intended emotional communication (that is to say, the emotional effect the author wishes to have on the reader).
+
+\begin{center}
+\chapter{\textcolor{blue}{\underline {SPECIFICATIONS AND ASSUMPTIONS}}}
+\end{center}
+\section*{Specifications}
+
+\begin{enumerate}
+\item Different Functions have been used for different obzectives.
+\item show function is used to display the books available
+\item book Edition has been acted as a unique value with the book name to identify a book
+\item student privileges are only limited to view and add books.
+\item admin , faculty login can delete the books as required.
+\item atoi function has been invoked from stdlib Library.
+
+\end{enumerate}
+
+\section*{Assumptions}
+
+\begin{enumerate}
+\item There are as such no multiple copies of a book for same edition.
+\item The author name and other such variables accept character Values only.
+\item Error handling has been done accordingly for non existent books or as such .
+
+\end{enumerate}
+ 
+\begin{center}
+\chapter{\textcolor{blue}{\underline {LOGIC USED/METHODOLOGY}}}
+\end{center}
+The methodology that is used for developing the program is defined below:\\
+
+\begin{enumerate}
+\item Basically , We intiate our code in C++ with the switch case command.
+\item They avail the user to use as many options they can exercise.
+\item The values of the Book attributes are saved in Character only.
+\item We simply create functions for all the options.
+\item The class obzect of the bookk is invoked by the class instance.
+\item The values are recorded intoo a file system.
+\item further Searching of the values done from the file named file.txt
+\item Records may be deleted added as per specification.
+
+\end{enumerate}
+
+\begin{center}
+\chapter{\textcolor{blue}{\underline {FLOWCHART}}}
+\end{center}
+\noindent \\Flowchart
+\begin{center}
+% \includegraphics[width=12 cm,height=11 cm]{./flowchart.png}
+ % flowchart.png: 744x774 pixel, 72dpi, 26.25x27.31 cm, bb=0 0 744 774
+\end{center}
+
+\begin{center}
+\chapter{\textcolor{blue}{\underline {EXECUTION INSTRUCTIONS}}}
+\end{center}
+\begin{enumerate}
+ \item For program following instructions are used.
+ \begin{enumerate}
+  \item g++ library1.C
+ \end{enumerate}
+
+\end{enumerate}
+Repeat the above instructions for different inputs.
+
+\begin{center}
+\chapter{\textcolor{blue}{\underline {RESULTS AND CONCLUSIONS}}}
+\end{center}
+\noindent For the given set of inputs the program exactly displays the Library management Database.\\
+\begin{center}
+ %\includegraphics[width=13 cm,height=13 cm]{./Output.png}
+ % Output.png: 1280x800 pixel, 72dpi, 45.16x28.22 cm, bb=0 0 1280 800
+\end{center}
+\end{document}  

@@ -1,0 +1,2 @@
+Occurrence:occurrence.cpp	
+	g++ -Wall -o Occurrence occurrence.cpp
